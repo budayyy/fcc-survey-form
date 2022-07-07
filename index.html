@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Pendaftaran Bootcamp Form</h1>
+        <p id="description" class="description text-center">
+          terimakasih sudah mengajukan pendaftaran cooding bootcamp gratis ini
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="nama">Nama</label>
+          <input
+            type="text"
+            name="nama"
+            id="name"
+            class="form-control"
+            placeholder="silahkan isi nama anda"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="silahkan isi email anda"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Umur</label>
+          <input
+            type="number"
+            name="umur"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="umur"
+          />
+        </div>
+        <div class="form-group">
+          <p>Apa pendidikan terakhir anda?</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disable selected value>Silahkan pilih</option>
+            <option value="Kuliah">Kuliah</option>
+            <option value="SMA">SMA</option>
+            <option value="SMP">SMP</option>
+            <option value="SD">SD</option>
+            <option value="Tidak SEkolah">Tidak Sekolah</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Apa Jenis Kelamin Anda</p>
+          <label>
+            <input
+              type="radio"
+              name="user-recomemend"
+              value="laki-laki"
+              class="input-radio"
+              checked
+            />Laki-Laki
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="user-recomemend"
+              value="perempuan"
+              class="input-radio"
+            />Perempuan
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>
+            jalur apa yang akan anda pilih..?
+            <span class="clue">(ceklis boleh lebih dari satu)</span>
+          </p>
+
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="Web Developer"
+              class="input-checkbox"
+            />
+            Web Developer
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="Android Developer"
+              class="input-checkbox"
+            />
+            Android Developer
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="Full Stack Developer"
+              class="input-checkbox"
+            />
+            Full Stack Developer
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              value="Game Developer"
+              class="input-checkbox"
+            />
+            Game Developer
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Apakah ada pertanyaan.?</p>
+          <textarea
+            name="comment"
+            id="comments"
+            class="input-textarea"
+            placeholder="silahkan isi comments disini"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
